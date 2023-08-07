@@ -1,9 +1,9 @@
 import streamlit as st
-# import pickle
+import pickle
 import numpy as np
 
 import joblib
-df=joblib.load("df.pkl")
+df=pickle.load(open('df.pkl','rb'))
 
 
 import pandas as pd
